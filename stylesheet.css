@@ -1,0 +1,649 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-dec-14, 20:57:47
+    Author     : Simon
+*/
+/*reseting stylesheet*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 85%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+h1{
+    font-family: serif; 
+    font-style: italic; 
+    font-weight: bold; 
+    font-size: 200%; 
+    color: #6FA8DC; 
+    text-align: center; 
+    margin: 20px 0px; 
+    padding:5px;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: separate; /*Inherited*/
+    border-spacing: 0; /*Inherited*/
+    table-layout: fixed; /*Allowing table (th/td) width to be set (th/td width must be set)*/
+    line-height: 0; /*Removing whitespace. Inherited*/
+}
+table, tr, th, td{
+    padding:0;
+}
+/*Reset end*/
+
+body {
+    line-height: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #6FA8DC;
+}
+.bgCoverSlider{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+/*--------------------------------------Generic--------------------------------*/
+/*--------------------------------------Generic--------------------------------*/
+/*--------------------------------------Generic--------------------------------*/
+p.presentationUnderNav{
+    font-style: italic;
+    font-size: 100%;
+    font-family: serif, Arial;
+    text-align: center;
+    width: 270px;
+    color: black;
+    line-height: 1.5;
+    /*outline: 2px solid green;*/
+    margin: 0 auto; 
+    margin-bottom: 0;
+}
+
+#wrapper{
+    position: relative;
+    background-color: white;
+    left: 50%; /*Centering wrapper*/
+    margin-left: -442px; /*Centering wrapper considering wrapper width*/
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 885px; 
+    height: auto;
+    border-radius: 15px;
+    box-shadow:  0px 0px 30px black; /*Creating a shadow around all four sides of the box*/
+}
+.topHeader{
+    position: relative; /*Text inside topHeader can be set to absolute to be relative to topHeader as parent-element*/
+    width: 885px; /*Dealing with whitespace: adding size to cover whole area and hiding extra area with outline in #wrapper*/
+    height: 45px;
+    background-color: #93C47D;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 2px solid black;
+}
+.topHeader p{
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 70%;
+}
+a#linkInsideTopHeader{
+    text-decoration: none;
+    color: black;
+    font-size: 100%;
+}
+a#linkInsideTopHeader a:link{
+    color: black;
+}
+a#linkInsideTopHeader a:hover{
+    color: #6FA8DC;
+}
+.middleHeader{
+    width: 885px;
+    height: 140px;
+    background-image: url('images/topHeader timeForYou 885_140.jpg');
+    border-bottom: 2px solid black;
+}
+.bottomHeader{
+    width: 885px;
+    height: 213px;
+    /*outline: 2px solid black;*/
+    background-image: url('images/tropical house in the sea 885_213.png');
+    border-bottom: 1px solid black;
+}
+nav{
+    text-align: center; /*Centering contained block and inline-block elements*/
+}
+nav ul{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+nav ul li{
+    display:inline;
+    white-space: nowrap;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-family: Arial;
+    height: 15px;
+    padding: 5px 10px 5px 10px;
+    margin: 0;
+    text-align: center; 
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    font-size: 85%;
+}
+nav ul li a:hover{
+    background-color: #6FA8DC;
+}
+nav ul li a:active{ /*The link the MOMENT it is clicked*/
+    color: white;
+}
+footer{
+    clear: both;
+    text-align: center;
+    width: 885px; 
+    height: 100px;
+    background-color: #93C47D;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 1px solid black;
+}
+.footerContent{
+    float: left;
+    width: 29%;
+    margin: 3% 2.1%;
+    overflow: hidden;
+    text-align: center;
+}
+.footerContent p{
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 65%;
+    line-height: 1.5;
+}
+.footerContent a{
+    color: blue;/*#6FA8DC;*/
+    text-decoration: none;
+}
+.footerContent ul li{
+    display: inline;
+}
+p.presentationLeftIndex{
+    font-style: italic;
+    font-size: 100%;
+    font-family: serif, Arial;
+    text-align: center;
+    width: 270px;
+    color: black;
+    line-height: 1.5;
+    float: left; 
+    margin: 20px 0px 20px 25%; 
+    padding:5px; 
+    transform: translate(-50%);
+}
+p.presentationRightIndex{
+    font-style: italic;
+    font-size: 100%;
+    font-family: serif, Arial;
+    text-align: center;
+    width: 270px;
+    color: black;
+    line-height: 1.5;
+    float: left; 
+    padding:5px; 
+    margin: 0px 0px 40px 80px; 
+    transform: translate(-50%);
+}
+p.openingHours{
+    float: left; 
+    font-size: 80%;
+    font-family: Arial, Verdana;
+    text-align: center;
+    width: 140px;
+    margin: 40px 0px 40px 80px;
+    color: black;
+    padding: 5px;
+    line-height: 1;
+    transform: translate(-50%);
+    border: 1px solid black;
+    background-color: #93C47D;
+    border-radius: 15px;
+}
+table.tableIndex{
+    margin-left: auto; /*Centering table*/
+    margin-right: auto; /*Centering table*/
+    margin-bottom: 30px;
+    border-spacing: 50px 0;
+}
+table.tableIndex td{
+    width: 200px; /*Locking width for text to keep same width as images*/
+    padding-top: 5px; /*5px; Creating some space between image and text*/
+    position: relative; /*Contained elements can be positioned absolute to enable position formatting*/
+}
+p.tableTextAboveImage{
+    color: #6FA8DC;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Palatino Linotype";
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 100%;
+}
+img.tableImagePresentation{
+    border: 2px solid black;
+    padding: 1px;
+    box-shadow: 0px 0px 15px black;
+}
+p.tableTextBelowImage{
+    line-height: 1;
+    font-size: 80%;
+    text-align: center;
+    font-family: "Palatino Linotype";
+    padding: 1px;
+}
+/*--------------------------Index----------------------------*/
+/*--------------------------Index----------------------------*/
+/*--------------------------Index----------------------------*/
+.boxContent{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+.boxContent a{
+    text-decoration: none;
+}
+/*--------------------------Services----------------------------*/
+/*--------------------------Services----------------------------*/
+/*--------------------------Services----------------------------*/
+
+table.tableServices{
+    margin-left: auto; /*Centering table*/
+    margin-right: auto; /*Centering table*/
+    margin-bottom: 30px;
+    border-spacing: 10px 0;
+}
+table.tableServices td{
+    width: 200px; /*Locking width for text to keep same width as images*/
+    padding-top: 5px; /*5px; Creating some space between image and text*/
+    position: relative; /*Contained elements can be positioned absolute to enable position formatting*/
+    /*outline: 1px solid red;*/
+}
+table.tableServices td:hover .tableImagePresentation{
+    border: 2px solid #6FA8DC;
+    opacity: 0.5;
+    cursor: pointer;
+}
+table.tableServices td:hover .caption{
+    opacity: 1;
+}
+.caption:hover {
+    cursor: pointer;
+}
+.caption{
+    opacity: 0;
+    font-family: Arial;
+    color: black;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapperPicSer{
+    overflow-x: hidden;
+    width: 400px;
+    height: 90%;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    border: 1px solid black;
+    display: none;
+}
+button.boxCloseSer{
+    position: absolute;
+    right: 0;
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    background: #605F61;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px; 
+}
+button.boxCloseSer:before {
+    content: "×";
+}
+button.boxCloseSer:focus{
+    outline: 0;
+}
+.textWrapperSer{
+    position: relative;
+    width: 90%;
+    left: 5%;
+    margin-top: 30px;
+}
+.picSer{
+    display: none;
+}
+.textWrapperSer p{
+    font-style: italic;
+    font-size: 85%;
+    font-family: serif, Arial;
+    text-align: center;
+    width: 270px;
+    color: black;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+span.p1{
+    font-style: normal; //making h1 normal instead of italic
+    font-size: 100%;
+    font-family: serif, Arial;
+    text-align: center;
+    width: 270px;
+    color: black;
+    line-height: 1.5;
+    margin: 0 auto;    
+}
+span.p2{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 100%;
+    font-family: serif, Arial;
+    text-align: center;
+    width: 270px;
+    color: black;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+/*--------------------------Facilities----------------------------*/
+/*--------------------------Facilities----------------------------*/
+/*--------------------------Facilities----------------------------*/
+
+table.tableFacilities{
+    /*outline: 2px solid black;*/
+    margin-left: auto; /*Centering table*/
+    margin-right: auto; /*Centering table*/
+    border-spacing: 60px 0; /*Space between cells*/
+    margin-bottom: 40px;
+}
+table.tableFacilities td{
+    width: 200px;
+    padding-top: 5px; /*5px; Creating some space between image and text*/
+    position: relative; /*Contained elements can be positioned absolute to enable position formatting*/
+}
+
+table.tableFacilities td:hover .tableImagePresentation{
+    border: 2px solid #6FA8DC;
+    opacity: 0.5;
+    cursor: pointer;
+}
+table.tableFacilities td:hover .caption{
+    opacity: 1;
+}
+.wrapperSS{
+    display: none;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    border: 1px solid black;
+}
+button.boxClose{
+    float:right;
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    background: #605F61;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px; 
+}
+button.boxClose:before {
+    content: "×";
+}
+button.boxClose:focus{
+    outline: 0;
+}
+.slider{
+    margin-top: 67px; //put images in the middle of wrapper
+    width: 400px;
+    height: 266px;
+    overflow: hidden;
+}
+.slider > img{
+    width: 400px;
+    height: 266px;
+    float: left;
+    display: none;
+}
+.figSlider{
+    display: none;
+}
+.wrapperSS a{
+    padding: 5px 10px;
+    background-color: black;/*#F0F0F0;*/
+    color: white;/*#666;*/
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 85%;
+    border-radius: 15px;
+}
+.wrapperSS a:hover{
+    color: #6FA8DC;
+}
+#link{
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*--------------------------Contact----------------------------*/
+/*--------------------------Contact----------------------------*/
+/*--------------------------Contact----------------------------*/
+form#formContact{
+    font-family: Verdana, Arial;
+    line-height: 1.5; /*Space between label and text input area*/
+    font-size: 75%;
+    float: left; /*To place info text frame beside form*/
+    margin: 10px 10% 40px 10%;
+    width: 33%;
+}
+form#formContact label.error{
+    font-size: 0.8em; 
+    color: #F00;
+}
+form#formContact input.error{ /*Styling all input-elements with error*/
+    background: #FFA9B8; 
+    border: 1px solid red; 
+}
+form#formContact input{
+    border: 1px solid black;
+    width: 300px;
+    font-weight: normal; /*Input text in normal to override bold label*/
+}
+form#formContact li{
+    margin: 10px 0; /*Space between list items (text input)*/
+    width: 300px;
+    /*border: 1px solid black;*/
+}
+#formContact label{
+    margin: 10px 0;
+    font-weight: bold; /*Label name in bold*/
+}
+textarea#feedback{
+    width:300px;
+    height:150px;
+    border: 1px solid black;
+    font-weight: normal;
+    resize: none;
+}
+input#button{
+    width:100px;
+}
+input#button:hover{
+    background-color: #6FA8DC;
+}
+input#button:active{
+    background-color: white;
+}
+p.emailsAnswered{
+    float: left; 
+    font-size: 80%;
+    font-family: Arial, Verdana;
+    text-align: center;
+    width: 140px;
+    margin: 40px 0px 40px 80px;
+    color: black;
+    padding: 5px;
+    line-height: 1;
+    transform: translate(-50%);
+    border: 1px solid black;
+    background-color: #93C47D;
+    border-radius: 15px;
+}
+
+/*--------------------------Getting here----------------------------*/
+/*--------------------------Getting here----------------------------*/
+/*--------------------------Getting here----------------------------*/
+
+section#secWrapper{
+    width: 100%;
+    height: 500px;
+}
+#map{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 302px;
+}
+#map-canvas{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    left: 60%;
+    margin-left: -200px;
+    outline: 1px solid black;
+}
+.map-canvasA{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    margin: 0;
+    padding: 10px 0;
+    left: 60%;
+    margin-left: -150px;
+}
+p#fullscreenMap{
+    display: inline;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#directions{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 300px;
+}
+p.directions{
+    position: absolute;
+    font-size: 85%;
+    font-family: Arial, Verdana;
+    text-align: center;
+    width: 200px;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    padding: 10px;
+    line-height: 1;
+    border: 1px solid black;
+    background-color: #93C47D;
+    border-radius: 15px;
+}
+
+#sectionWrapper {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+    outline: 1px solid black;
+}
+#mapWrapper{
+    position:relative;
+    display: inline-block;
+    height: 300px;
+    margin: 0;
+    padding: 0px;
+    width: 49%;
+    outline: 1px solid black;
+}
+#directionsWrapper{
+    display: inline-block;
+    height: auto;
+    width: 49%;
+    margin: 0;
+    padding: 0px;
+    outline: 1px solid black;
+}
+
+/*--------------------------contact confirm----------------------------*/
+/*--------------------------contact confirm----------------------------*/
+/*--------------------------contact confirm----------------------------*/
+
+p#confirmationText{
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: serif, Arial;
+    margin-top: 40px;
+}

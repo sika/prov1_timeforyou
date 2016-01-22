@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change tdis license header, choose License Headers in Project Properties.
+To change tdis template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Time for you</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div class="topHeader">
+                <p style="position:absolute; top:50%; right:0px;transform:translate(0,-50%); margin-right:10px">
+                    Call us at: <a id="linkInsideTopHeader" href="tel:+460702131527">0702131527</a>
+                </p>
+            </div>
+            <div class="middleHeader">
+            </div>
+            <div class="bottomHeader">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a> 
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="facilities.html">Facilities</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="gettinghere.html">Getting here</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1>Contact form</h1>
+            <p class="presentationUnderNav">
+                To find out more about Time for you spa resort, for example prices and availability, please us the form below to contact us and we will get back to you. 
+            </p>
+            <form id="formContact" action="process.php" method="POST">
+                <!--Get or Post-->
+                <ul>
+                    <li><label>Company<br> <input type="text" name="company" id="company"></label></li>
+                    <li><label>Name<br> <input type="text" name="name" id="name"></label></li>
+                    <li><label>Email *<br> <input type="text" name="email" id="email"></label></li>
+                    <li><label>Confirm email *<br> <input type="text" name="email_confirm" id="email_confirm" title="emails don't match, please try again"></label></li>
+                    <li><label>Message *<br> <textarea name="feedback" id="feedback"></textarea></label></li>
+                    <li style="text-align: right;"><input type="submit" value="Send message" name="submit" id="submit"></li>
+                    <li>* Mandatory fields</li>
+                    <!--onfocus="this.value = ''--> 
+                </ul>
+            </form>
+            <p class="emailsAnswered">Emails are usually answered within one working day</p>
+            <footer>
+                <div class="footerContent" style="text-align: left;">
+                    <p><b>Contact</b></p>
+                    <p>Telephone: 0702131527</p>
+                    <p>Email: <a href="mailto:simon.workemail@gmail.com" target="_top">simon.workemail@gmail.com</a></p>
+                </div>
+
+                <div class="footerContent">
+                    <ul>
+                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftimeforyou.tk&t=Time%20for%20you" target="_blank"><img src="images/facebook1small.png" alt="Facebook"></a></li>
+                        <li><img src="images/googleplusSmall.png" alt="Google+"></li>
+                        <li><img src="images/twitter1Small.png" alt="Twitter"></li>
+                    </ul>
+                </div>                
+
+                <div class="footerContent" style="font-style: italic;">
+                    <p>Time for you </p>
+                    <p>Copyright &copy; 2015</p>
+                </div>
+
+            </footer>
+        </div>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/tfyFormJS.js"></script>
+    </body>
+</html>

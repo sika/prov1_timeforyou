@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+To change tdis license header, choose License Headers in Project Properties.
+To change tdis template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Time for you</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div class="topHeader">
+                <p style="position:absolute; top:50%; right:0px;transform:translate(0,-50%); margin-right:10px">
+                    Call us at: <a id="linkInsideTopHeader" href="tel:+460702131527">0702131527</a>
+                </p>
+            </div>
+            <div class="middleHeader">
+            </div>
+            <div class="bottomHeader">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a> 
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="facilities.html">Facilities</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="gettinghere.html">Getting here</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Services</h1>
+            <p class="presentationUnderNav">
+                At Time for you, we will make sure you you'll have the best, calm, time possible.<br><br> Check out our different services below. By clicking them you can read more about the different types of massage, acupuncture, sauna and yoga we have.<br><br>
+            </p>
+            <table class="tableServices" style="border-spacing:10px 0px;">
+                <tr>
+                    <td><p class="tableTextAboveImage">Massage</p></td>
+                    <td><p class="tableTextAboveImage">Acupuncture</p></td>
+                    <td><p class="tableTextAboveImage">Sauna</p></td>
+                    <td><p class="tableTextAboveImage">Yoga</p></td>
+                </tr>
+                <tr>
+                    <td><img class="tableImagePresentation" src="images/Young Woman Getting Spa Massage croped.jpg" alt="Massage" onclick="initiateSerInfo(1);"><div class="caption" onclick="initiateSerInfo(1);">Read more</div></td>
+                    <td><img class="tableImagePresentation" src="images/acupuncture croped.jpg" alt="Acupuncture" onclick="initiateSerInfo(2);"><div class="caption" onclick="initiateSerInfo(2);">Read more</div></td>
+                    <td><img class="tableImagePresentation" src="images/sauna croped.jpg" alt="Sauna"  onclick="initiateSerInfo(3);"><div class="caption" onclick="initiateSerInfo(3);">Read more</div></td>
+                    <td><img class="tableImagePresentation" src="images/girl doing yoga croped 200_153.jpg" alt="Yoga"  onclick="initiateSerInfo(4);"><div class="caption" onclick="initiateSerInfo(4);">Read more</div></td>
+                </tr>
+            </table>
+
+            <div class="wrapperPicSer">
+                <button class="boxCloseSer" onclick="closeSliderAndCover();" title="Esc to close"></button>
+                <div class="picSer" id="1">
+                    <img style="border-bottom: 1px solid black;" src="images/massage.jpg" alt="massage">
+                    <div class="textWrapperSer">
+                        <p><span class="p1">All or massage therapists are certified and offer a variety of massage techniques</span><br><br> 
+                            <span class="p2">Classic Swedish massage</span><br>
+                            Reduce pain and enjoy a truly functional massage through whole the whole body<br><br>
+
+                            <span class="p2">Oriental face massage</span><br>
+                            This treatment focuses on face and skalp and is very relaxing. It contains cleansing,
+                            peeling, relaxing mask and continues with a moisture energizing cream. We finish 
+                            off with a relaxing skalp massage.</p>
+                    </div>
+                </div>
+                <div class="picSer" id="2">
+                    <img style="border-bottom: 1px solid black;" src="images/acupuncture_400x266.jpg" alt="acupuncture">
+                    <div class="textWrapperSer">
+                        <p>
+                            <span class="p1">Acupuncture is used to treat a variety of conditions concerning both mind and body. Some benefits include pain relief, emotional and neurological health, gastro-intestinal (stomach) health and overall long-term wellbeing.</span><br><br>
+
+                            <span class="p1">Our professional personal will adjust the treatment to best suit your specific needs</span>                            
+                    </div>
+                </div>
+                <div class="picSer" id="3">
+                    <img style="border-bottom: 1px solid black;" src="images/sauna.jpg" alt="Sauna">
+                    <div class="textWrapperSer">
+                        <p><span class="p1">Our fresh sauna is always open and ready to meet you as you are; nothing more, nothing less.</span><br><br> 
+                            <span class="p2">Aufguss sauna</span><br>
+                            This way of doing sauna originates from Germany. Airy oils of different flavors are poured onto the hot stones and leaves you feeling extra clean and relaxed.<br><br>                            
+                            <span class="p2">Finnish sauna</span><br>
+                            The Finnish sauna is fairly hot and moist. Also, fresh birch twigs with leaves are used to gently slap the skin and create further stimulation of the pores and cells.<br><br>                            
+                    </div>
+                </div>
+                <div class="picSer" id="4">
+                    <img style="border-bottom: 1px solid black;" src="images/yoga.jpg" alt="Yoga">
+                    <div class="textWrapperSer">
+                        <p><span class="p1">We offer different types of yoga, all guided by our certified and professional personal.</span><br><br> 
+                            <span class="p2">Ashtanga yoga</span><br>
+                            Ashtanga has a physical focus, aimed at strengthening the body and making you more limber<br><br>
+
+                            <span class="p2">Kundalini yoga</span><br>
+                            Awake your kundalini energy through this yoga form which focuses mainly on the mind. The goal is to cultivate spiritual potential using meditation and breathing techniques.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footerContent" style="text-align: left;">
+                    <p><b>Contact</b></p>
+                    <p>Telephone: 0702131527</p>
+                    <p>Email: <a href="mailto:simon.workemail@gmail.com" target="_top">simon.workemail@gmail.com</a></p>
+                </div>
+
+                <div class="footerContent">
+                    <ul>
+                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftimeforyou.tk&t=Time%20for%20you" target="_blank"><img src="images/facebook1small.png" alt="Facebook"></a></li>
+                        <li><img src="images/googleplusSmall.png" alt="Google+"></li>
+                        <li><img src="images/twitter1Small.png" alt="Twitter"></li>
+                    </ul>
+                </div>                
+                <div class="footerContent" style="font-style: italic;">
+                    <p>Time for you </p>
+                    <p>Copyright &copy; 2015</p>
+                </div>
+
+            </footer>
+        </div>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/tfyJS.js"></script>
+    </body>
+</html>

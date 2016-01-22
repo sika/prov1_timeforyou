@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change tdis license header, choose License Headers in Project Properties.
+To change tdis template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Time for you</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div class="topHeader">
+                <p style="position:absolute; top:50%; right:0px;transform:translate(0,-50%); margin-right:10px">
+                    Call us at: <a id="linkInsideTopHeader" href="tel:+460702131527">0702131527</a>
+                </p>
+            </div>
+            <div class="middleHeader">
+            </div>
+            <div class="bottomHeader">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a> 
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="facilities.html">Facilities</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="gettinghere.html">Getting here</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1>Getting here</h1>
+
+            <section id="secWrapper">
+                <div id="map">
+                    <div id="map-canvas"></div>
+                    <div class="map-canvasA">
+                        <a href="https://www.google.se/maps/dir/12.1416163,102.2809842/Nirvana+Resort,+12%2F4-5+Moo+1+Bangbao,+Koh+Chang+Tai,+23170,+Thailand/@12.050438,102.2966221,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x31041265b6905e07:0xa8241a4cb4714c0f!2m2!1d102.311472!2d11.965323!3e0?hl=en" target="_blank">Google maps</a> <p style="font-weight: bold; display:inline;">
+                    </div>
+                </div>
+                <div id="directions">
+                    <p class="directions">12/4-5 Moo 1 Bangbao<br>
+                        Koh Chang Tai<br>
+                        23170, Thailand<br><br>
+
+                        Click the map image to get directions from the Koh Chang ferry<br><br>
+
+                        When reaching Nirvana resort, there is a sign on the left hand side displaying "Time for you". Follow the path and you are one minute from your destination</p>
+                </div>
+            </section>
+            <footer>
+                <div class="footerContent" style="text-align: left;">
+                    <p><b>Contact</b></p>
+                    <p>Telephone: 0702131527</p>
+                    <p>Email: <a href="mailto:simon.workemail@gmail.com" target="_top">simon.workemail@gmail.com</a></p>
+                </div>
+
+                <div class="footerContent">
+                    <ul>
+                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftimeforyou.tk&t=Time%20for%20you" target="_blank"><img src="images/facebook1small.png" alt="Facebook"></a></li>
+                        <li><img src="images/googleplusSmall.png" alt="Google+"></li>
+                        <li><img src="images/twitter1Small.png" alt="Twitter"></li>
+                    </ul>
+                </div>                
+
+                <div class="footerContent" style="font-style: italic;">
+                    <p>Time for you </p>
+                    <p>Copyright &copy; 2015</p>
+                </div>
+
+            </footer>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/googleMaps.js"></script>
+    </body>
+</html>

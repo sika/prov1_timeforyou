@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+To change tdis license header, choose License Headers in Project Properties.
+To change tdis template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Time for you</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div class="topHeader">
+                <p style="position:absolute; top:50%; right:0px;transform:translate(0,-50%); margin-right:10px">
+                    Call us at: <a id="linkInsideTopHeader" href="tel:+460702131527">0702131527</a>
+                </p>
+            </div>
+            <div class="middleHeader">
+            </div>
+            <div class="bottomHeader">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a> 
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="facilities.html">Facilities</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="gettinghere.html">Getting here</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Facilities</h1>
+            <p class="presentationUnderNav">
+                Our spa offers a unique mix of both a soothing and thrilling environment. How about swimming with turtles and other amazing sea creatures, only to go inside a minute later and relax in our massage room.<br><br>
+            </p>
+            <table class="tableFacilities">                 
+                <tr>
+                    <td><p class="tableTextAboveImage">The place</p></td>
+                    <td><p class="tableTextAboveImage">The house</p></td>
+                    <td><p class="tableTextAboveImage">Massage room</p></td>
+                </tr>
+                <tr>
+                    <td><img class="tableImagePresentation" src="images/thumbnails/tropicIsland_200x133.jpg" onclick="initiateSlider(1);"><div class="caption" onclick="initiateSlider(1);">Enlarge</div></td>
+                    <td><img class="tableImagePresentation" src="images/thumbnails/tropicalHouse_200x133.jpg" onclick="initiateSlider(2);"><div class="caption" onclick="initiateSlider(2);">Enlarge</div></td>
+                    <td><img class="tableImagePresentation" src="images/thumbnails/massageRoom_200_132.jpg" onclick="initiateSlider(3);"><div class="caption" onclick="initiateSlider(3);">Enlarge</div></td>
+
+                </tr>
+            </table>
+            <table class="tableFacilities">
+                <tr>
+                    <td><p class="tableTextAboveImage">Yoga room</p></td>
+                    <td><p class="tableTextAboveImage">Breakfast</p></td>
+                </tr>
+                <tr>
+                    <td><img class="tableImagePresentation" src="images/thumbnails/yogaRoom_200x133.jpg" onclick="initiateSlider(4);"><div class="caption" onclick="initiateSlider(4);">Enlarge</div></td>
+                    <td><img class="tableImagePresentation" src="images/thumbnails/breakfast_200x133.jpg" onclick="initiateSlider(5);"><div class="caption" onclick="initiateSlider(5);">Enlarge</div></td>
+                </tr>
+            </table>
+
+            <div class="wrapperSS">
+                <button class="boxClose" onclick="closeSliderAndCover();" title="Esc to close"></button>
+                <div class="slider">
+                    <figure class="figSlider" id="1">
+                        <figcaption><p class="tableTextAboveImage">The place</p></figcaption> 
+                        <img src="images/tropicIsland_400x267.jpg">
+                    </figure>
+                    <figure class="figSlider" id="2">
+                        <figcaption><p class="tableTextAboveImage">The house</p></figcaption> 
+                        <img src="images/tropicalHouse_400x266.jpg">
+                    </figure>
+                    <figure class="figSlider" id="3">
+                        <figcaption><p class="tableTextAboveImage">Massage room</p></figcaption> 
+                        <img src="images/massageRoom_400x264.jpg">
+                    </figure>
+                    <figure class="figSlider" id="4">
+                        <figcaption><p class="tableTextAboveImage">Yoga room</p></figcaption> 
+                        <img src="images/yogaRoom_400x266.jpg">
+                    </figure>
+                    <figure class="figSlider" id="5">
+                        <figcaption><p class="tableTextAboveImage">Breakfast</p></figcaption> 
+                        <img src="images/breakfast_400x266.jpg">
+                    </figure>
+                </div>
+                <div id="link">
+                    <a href="#" class="left" onclick="prev();
+                            return false;">Previous</a>
+                    <a href="#" class="right" onclick="next();
+                            return false;">Next</a>
+                </div>
+            </div>
+            <footer>
+                <div class="footerContent" style="text-align: left;">
+                    <p><b>Contact</b></p>
+                    <p>Telephone: 0702131527</p>
+                    <p>Email: <a href="mailto:simon.workemail@gmail.com" target="_top">simon.workemail@gmail.com</a></p>
+                </div>
+
+                <div class="footerContent">
+                    <ul>
+                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftimeforyou.tk&t=Time%20for%20you" target="_blank"><img src="images/facebook1small.png" alt="Facebook"></a></li>
+                        <li><img src="images/googleplusSmall.png" alt="Google+"></li>
+                        <li><img src="images/twitter1Small.png" alt="Twitter"></li>
+                    </ul>
+                </div>                
+
+                <div class="footerContent" style="font-style: italic;">
+                    <p>Time for you </p>
+                    <p>Copyright &copy; 2015</p>
+                </div>
+
+            </footer>
+        </div>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/tfyJS.js"></script>
+    </body>
+</html>
